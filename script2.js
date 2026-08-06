@@ -58,6 +58,16 @@ buttons.forEach(function(button){
                 answer = num1 / num2;
             }
 
+            if (operator === "%"){
+                answer = num1 / 100;;
+            }
+
+            // if (operator === "."){
+            //     answer = num1 + "." + num2;
+            // }
+
+            expression.textContent = firstNumber + " " + operator + " " + secondNumber + " =";
+
             result.textContent = answer;
         }
 
